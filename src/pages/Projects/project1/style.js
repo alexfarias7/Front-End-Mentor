@@ -10,9 +10,11 @@ export const Main = styled.div`
   text-align: center;
   margin-bottom: 10px;
   font-size: 15px;
+ 
+
 `;
 
-export const attribution = styled.div`
+export const Attribution = styled.div`
   font-size: 11px;
   & a {
     color: hsl(228, 45%, 44%);

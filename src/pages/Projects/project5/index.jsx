@@ -1,8 +1,10 @@
+import * as Styled from './style'
+
 const Project5 = () => {
     return ( 
-        <div>
-            project 05
-        </div>
+        <Styled.Main>
+            projectjdhdhhd 05
+        </Styled.Main>
      );
 }
  

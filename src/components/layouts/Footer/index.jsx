@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       {["/", "/aboutme", "/contact"].includes(pathname) ? (
         <Styled.Footer>Footer</Styled.Footer>
-      ) : null}
+      ) : (null)}
     </>
   );
 };

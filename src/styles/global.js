@@ -8,9 +8,11 @@ export const GlobalStyles = createGlobalStyle`
   padding: 0;
 }
 
-body{
-    background: ${({ theme }) => theme.colors.mainColor};
-    font-family: ${({theme}) => theme.fonts.family.mainFont}
-  
+html{
+  background: ${({ theme }) => theme.colors.mainColor};
+    font-family: ${({theme}) => theme.fonts.family.mainFont};
+    
+
 }
+
 `;
