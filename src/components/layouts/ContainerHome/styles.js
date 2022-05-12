@@ -9,6 +9,4 @@ grid-template-columns: repeat(3, auto);  */
 /* display: inline-block;
  */margin: 2vh 5vw;
 width: 90%;
-
-
 `
