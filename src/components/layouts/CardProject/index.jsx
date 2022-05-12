@@ -1,8 +1,6 @@
 import * as Styled from "./styles";
 import { Link } from "react-router-dom";
 
-import Project1 from "pages/Projects/project1";
-
 const CardProject = ({ title, description, img, id }) => {
  
   return (
