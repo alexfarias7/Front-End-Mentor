@@ -1,0 +1,83 @@
+
+.titleMain {
+    font-size: 1.8em;
+    margin-top: 10px;
+  }
+  
+  .description {
+    color: hsl(216, 12%, 54%);
+    margin:20px 0;
+  }
+  .imgStar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(124, 135, 152, 0.2);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .valueUser {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(124, 135, 152, 0.2);
+    color: hsl(216, 12%, 54%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .option {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .valueUser:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+  }
+  
+  .valueUser:focus{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+    
+  .main {
+    padding: 20px;
+    
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  .btnSubmit{
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    width: 100%;
+    border-radius: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:25px auto;
+    border-style: none;
+  }
+  
+  .btnSubmit:hover{
+    background-color:white;
+    color:hsl(25, 97%, 53%); 
+    cursor: pointer;
+  }

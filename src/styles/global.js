@@ -9,9 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 html{
-  background: ${({ theme }) => theme.colors.mainColor};
-    font-family: ${({theme}) => theme.fonts.family.mainFont};
-    
+  background: ${({ theme }) => theme.colors.mainColor};font-family: ${({theme}) => theme.fonts.family.mainFont}; 
 
 }
 

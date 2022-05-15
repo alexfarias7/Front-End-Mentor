@@ -1,4 +1,3 @@
-import * as Styled from "./style";
 import styles from "./styles.module.css"
 
 import qrcode from "./images/image-qr-code.png";

@@ -1,0 +1,30 @@
+
+
+.Project {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 100vh;
+    
+    
+  }
+  
+  
+  
+  
+  .general {
+    background-color: hsl(213, 19%, 18%);
+    max-height: 22em;
+    width: 22em;
+    border-radius: 1em;
+    
+   
+  }
+
+ 
+  
