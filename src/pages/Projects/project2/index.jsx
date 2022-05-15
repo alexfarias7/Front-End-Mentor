@@ -12,11 +12,21 @@ const stages = [
 ];
 
 const Project2 = () => {
-    return ( 
-        <div>
-            project 02 787777777777
-        </div>
-     );
-}
- 
+  const [Stage, setStage] = useState(stages[0].name);
+
+  const changeStage = () => {
+    setStage(stages[1].name);
+  };
+  
+
+  return (
+    <div className="Project">
+      <div className="general">
+        {Stage === "primary" && <Primary changeStage={changeStage} />}
+        {Stage === "secondary" && <Secondary />}
+      </div>
+    </div>
+  );
+};
+
 export default Project2;
