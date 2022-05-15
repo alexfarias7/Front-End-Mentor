@@ -17,6 +17,7 @@ const Project2 = () => {
   const changeStage = () => {
     setStage(stages[1].name);
   };
+  
 
   return (
     <div className="Project">
