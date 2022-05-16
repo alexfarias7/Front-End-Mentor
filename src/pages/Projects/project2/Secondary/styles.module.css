@@ -1,0 +1,38 @@
+
+.ContainerSecondary{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ContainerSecondary img {
+    margin: 0 auto;
+  }
+  
+  .msgResult{
+    background-color: rgba(124, 135, 152, 0.2);
+    color: hsl(25, 97%, 53%);
+    border-radius: 5em;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    margin: 20px auto;
+  }
+  
+  .ContainerSecondary h1{
+    margin: 0px;
+  }
+  
+  .thanks{
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+    padding-bottom: 10px;
+  }
+  .score{
+    margin: auto 3px;
+    color: hsl(25, 97%, 53%);
+   
+  }
