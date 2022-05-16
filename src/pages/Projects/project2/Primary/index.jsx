@@ -1,7 +1,12 @@
 import styles from "./styles.module.css";
 import star from "../assets/img/icon-star.svg";
 
-const Primary = ({ changeStage }) => {
+import OptionResult from "./OptionResult";
+import Msg from "./OptionResult/Msg/Msg";
+
+/* import { useLocation } from "react-router-dom";
+ */
+const Primary = ({ changeStage, changeValue, Erro }) => {
   return (
     <>
       <div className={styles.container}>
@@ -15,33 +20,18 @@ const Primary = ({ changeStage }) => {
             is appreciated to help us improve our offering!
           </p>
 
-          <div className={styles.option}>
-            <div className={styles.valueUser} tabIndex="1">
-              1
-            </div>
-            <div className={styles.valueUser} tabIndex="2">
-              2
-            </div>
-            <div className={styles.valueUser} tabIndex="3">
-              3
-            </div>
-            <div className={styles.valueUser} tabIndex="4">
-              4
-            </div>
-            <div className={styles.valueUser} tabIndex="5">
-              5
-            </div>
-          </div>
+          <OptionResult changeValue={changeValue} />
+
           <button
             type="button"
             className={styles.btnSubmit}
             onClick={changeStage}
+          
           >
             Submit
           </button>
         </div>
-
-        <div className="errorMSG"></div>
+        <Msg  Erro={Erro} />
       </div>
     </>
   );

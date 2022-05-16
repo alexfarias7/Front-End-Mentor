@@ -19,32 +19,7 @@
     margin-bottom: 10px;
   }
   
-  .valueUser {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(124, 135, 152, 0.2);
-    color: hsl(216, 12%, 54%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .option {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .valueUser:hover{
-    background-color: white;
-    color: hsl(25, 97%, 53%);
-    cursor: pointer;
-  }
-  
-  .valueUser:focus{
-    background-color: hsl(216, 12%, 54%);
-    color: white;
-  }
-  
+
   
   .container {
     display: flex;
