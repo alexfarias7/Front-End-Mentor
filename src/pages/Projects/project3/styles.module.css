@@ -1,0 +1,8 @@
+.Project{
+    background-color:hsl(0, 0%, 98%) ;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}

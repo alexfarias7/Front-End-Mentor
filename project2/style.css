@@ -1,0 +1,155 @@
+* {
+  border: 0;
+  padding: 0;
+  inset: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.title-main {
+  font-size: 1.8em;
+}
+
+.description {
+  color: hsl(216, 12%, 54%);
+}
+.img-star {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.2);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valueUser {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.2);
+
+  color: hsl(216, 12%, 54%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.valueUser:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.valueUser:focus{
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main,
+.divSecondary {
+  background-color: hsl(213, 19%, 18%);
+ max-width: 22em;
+  width: 22em;
+  border-radius: 1em;
+  margin: 25vh auto;
+  margin-bottom: 5vh
+}
+
+.main {
+  padding: 20px;
+  
+}
+
+.hidden{
+  display: none;
+}
+
+.btn-submit{
+  height: 40px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  width: 100%;
+  border-radius: 5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 25px auto;
+}
+
+.btn-submit:hover{
+  background-color:white;
+  color:hsl(25, 97%, 53%); 
+  cursor: pointer;
+}
+
+
+/** divSecondary */
+
+.ContainerSecondary{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContainerSecondary img {
+  margin: 0 auto;
+}
+
+.msgResult{
+  background-color: rgba(124, 135, 152, 0.2);
+  color: hsl(25, 97%, 53%);
+  border-radius: 5em;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 20px;
+}
+
+.ContainerSecondary h1{
+  margin: 0px;
+}
+
+.thanks{
+  text-align: center;
+  color: hsl(216, 12%, 54%);
+  padding-bottom: 10px;
+}
+.score{
+  margin: auto 3px;
+  color: hsl(25, 97%, 53%);
+ 
+}
+
+.pResult{
+  background-color: hsl(25, 97%, 53%);
+  color:#fff;
+  border-radius: 5em;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 20px;
+ 
+}

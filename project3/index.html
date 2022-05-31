@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="stylesheet" href="./assets/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        
+        <div class="navOptions">
+          
+          <div class="logo">
+            <a href="/">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="navPages">
+            <button class="btnMobile">Menu</button>
+
+            <ul class="pages">
+              
+              <li class="dropdown pagesOptions">
+               <a href="#Features">
+                 Features <img src="./images/icon-arrow-down.svg" alt="dowm" />
+               </a> 
+               <ul class="optionsMenu todo">
+                <li><a href="#todolist">
+
+                  <img src="./images/icon-todo.svg" alt="todo"> Todo List
+                </a>
+                  
+              </li >
+
+                <li><img src="./images/icon-calendar.svg" alt="">  Calendar</li>
+
+                <li> <img src="./images/icon-reminders.svg" alt="reminders">    Reminders</li>
+
+                <li> <img src="./images/icon-planning.svg" alt="PANINNG">  Planning</li>
+              </ul>
+              </li>
+
+              <li class="dropdown pagesOptions">
+               <a href="#Company">
+                Company <img src="./images/icon-arrow-down.svg" alt="dowm" />
+               </a> 
+               <ul class="optionsMenu company">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+
+              </li>
+
+              <li class="pagesOptions">
+               <a href="#Careers">
+                Careers <img src="./images/icon-arrow-down.svg" alt="dowm" />
+               </a> 
+
+              </li>
+
+
+              <li class="pagesOptions">
+               <a href="#About">
+                About <img src="./images/icon-arrow-down.svg" alt="dowm" />
+               </a> 
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="navLoginRegister">
+          <button>Login</button>
+          <button class="register">Register</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+
+      
+      <section class="info">
+        <div class="text-info">
+          <h1 class="title">Make remote work</h1>
+          <p>
+            Get your is sync no matter your location. Streamline processes, create
+          team rituals, and watch productvity soar.
+        </p>
+        <button type="button">Learn more</button>
+      </div>
+      
+      <div class="brands">
+        <img src="./images/client-databiz.svg" alt="databiz" />
+        <img src="./images/client-audiophile.svg" alt="audiophile" />
+        <img src="./images/client-meet.svg" alt="meet" />
+        <img src="./images/client-maker.svg" alt="" />
+      </div>
+    </section>
+    
+    <section class="imgMain">
+      <img src="./images/image-hero-desktop.png" alt="hero" />
+    </section>
+  </div>
+  </body>
+</html>

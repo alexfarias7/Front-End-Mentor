@@ -1,0 +1,19 @@
+.Btn{
+    background-color: hsl(0, 0%, 98%);
+    color:  hsl(0, 0%, 41%);
+    padding: 10px 20px; 
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Btn:hover{
+    color: hsl(0, 23%, 8%);
+    cursor: pointer;
+}
+
+@media (max-width:375px){
+    .Btn{
+       
+    width: 80%;
+    }
+}

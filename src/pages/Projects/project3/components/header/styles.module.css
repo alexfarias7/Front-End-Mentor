@@ -1,0 +1,70 @@
+.Header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button:nth-child(2) {
+  border: 0.1rem solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+}
+
+.btnMobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .btnMobile {
+    display: flex;
+    position: absolute;
+    z-index: 10000;
+    top: 10px;
+    left: 330px;
+  }
+/*   .pages, .Header{
+    position: relative;
+  } */
+
+
+  .Nav,
+  .buttons {
+    display: none;
+  }
+  .Header {
+    padding: 10px;
+  }
+  .drop {
+    display: flex;
+    position: absolute;
+    padding-top: 100px;
+    left: 120px;
+    background-color: hsl(0, 0%, 98%);
+    height: calc(100vh -100px);
+    z-index: 1000;
+    width: 70vw;
+  }
+  .dropButon {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    top: 400px;
+    left: 120px;
+    z-index: 1000;
+
+    width: 70vw;
+    font-family: "Epilogue", sans-serif;
+  }
+  .dropButon button:nth-child(2) {
+    border: 0.1rem solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,84 @@
+.Container{
+    height: 80vh;
+    display: flex;
+    padding: 0 10vw;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.texts h1{
+    margin-top: 20vh;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    font-size: 3.5em;
+}
+.texts p{
+    margin-top: 5vh;
+    width: 80%;
+}
+
+.img img{
+    height:100%;
+    padding-left: 10vw;
+}
+
+.btn{
+    background-color:hsl(0, 0%, 8%);
+    color:   hsl(0, 0%, 98%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 5vh auto;
+}
+.btn:hover{
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(0, 0%, 8%);
+    cursor: pointer;
+    border: 0.1em solid  hsl(0, 0%, 8%);
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width:375px){
+    .Container{
+        display: none;       
+    }
+    .mobile{
+        
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .imgMobile img{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .mobile h1{
+        color:  hsl(0, 0%, 8%);
+        font-size: 2em;
+        margin: 20px auto;
+    }
+    .mobile p{
+        font-size: 18px;
+        text-align: center;
+        line-height: 25px;
+       
+       
+    }
+    .brands img{
+        width: 20%;
+    }
+
+
+}

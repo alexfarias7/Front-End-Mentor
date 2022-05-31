@@ -1,0 +1,77 @@
+.Navbar {
+  margin-left: 20px;
+}
+
+.navgation {
+  display: flex;
+  list-style: none;
+}
+.navgation a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  padding: 30px 0;
+}
+.navgation a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.navgation li {
+  position: relative;
+}
+
+.Dropnav {
+  list-style: none;
+  display: none;
+  width: 170px;
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navgation .comapany {
+  left: -10px;
+  width: 140px;
+  padding: auto;
+}
+
+.navgation .comapany li {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.Dropnav li {
+  margin-bottom: 10px;
+}
+
+.Dropnav img {
+  margin-right: 10px;
+}
+
+.navgation li:hover .Dropnav {
+    display: table;
+}
+.navgation li:hover  img{
+    transform: rotate(-180deg);
+}
+
+@media (max-width:375px){
+
+ .navgation{
+   display: flex;
+   flex-direction: column;
+  
+  
+ } 
+ .navgation li{
+   margin-bottom: 40px;
+ }
+ .Dropnav{
+   left: 20px;
+ }
+}

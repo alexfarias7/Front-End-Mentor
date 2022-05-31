@@ -1,7 +1,15 @@
+import Container from './components/container';
+import Footer from './components/footer';
+import Header from './components/header';
+
+import styles from './styles.module.css';
+
 const Project3 = () => {
     return ( 
-        <div>
-            project 03
+        <div className={styles.Project}>
+           <Header/>
+           <Container/>
+           <Footer/>
         </div>
      );
 }
