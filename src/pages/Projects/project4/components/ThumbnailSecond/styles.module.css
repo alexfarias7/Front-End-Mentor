@@ -1,0 +1,18 @@
+.secondProduct {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 8rem;
+}
+.secondProduct img {
+  display: flex;
+  flex-direction: row;
+  height: 4.5rem;
+  border-radius: 8%;
+}
+
+
+.overshadow:focus {
+  opacity: 0.2;
+}
+

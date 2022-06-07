@@ -1,0 +1,33 @@
+.Header {
+  display: flex;
+  height: 13vh;
+  justify-content: space-between;
+  width:90%;
+  margin:auto;
+  padding:10px;
+  border-bottom: 2px solid hsl(223, 64%, 98%);
+  
+}
+
+.pages {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.user {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+  align-items: center;
+
+}
+.user img {
+  cursor: pointer;
+}
+.imgUser img {
+  height:2.5rem;
+  justify-self: right;
+  position: relative;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}

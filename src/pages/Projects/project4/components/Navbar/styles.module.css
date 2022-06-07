@@ -1,0 +1,20 @@
+.Navbar{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+   
+}
+
+.Navbar a {
+    text-decoration: none;
+    color:  hsl(219, 9%, 45%);
+    
+}
+.Navbar a:hover{
+color: hsl(0, 0%, 0%);
+padding-bottom: 30px;
+text-align: center;
+border-bottom: 3px solid hsl(26, 100%, 55%);
+
+
+}
