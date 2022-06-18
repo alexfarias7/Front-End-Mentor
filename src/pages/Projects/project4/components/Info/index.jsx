@@ -4,11 +4,11 @@ import cart from "../../ecommerce-product-page-main/images/icon-cart-2.svg";
 
 import styles from "./styles.module.css";
 import { useContext } from "react";
-import { ContextQtd } from "../..";
+import { ContextData } from "../..";
 
 const Info = ({ title, content, midPrice, price, descont, brange }) => {
-  const { qtdItem } = useContext(ContextQtd);
-  const { setQtd } = useContext(ContextQtd);
+  const { qtdItem } = useContext(ContextData);
+  const { setQtd } = useContext(ContextData);
 
   return (
     <div className={styles.Info}>

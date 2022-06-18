@@ -1,8 +1,8 @@
 .swiper {
   margin-top: 3rem;
-  margin-left: 1rem;
+  margin-left: 3rem;
   padding: 10px;
-  width: 40%;
+  width: 50%;
 }
 
 .swiper-slide {
@@ -22,7 +22,6 @@
   background-color: white;
   height: 2.5rem;
   position: absolute;
-  right: 16%;
   padding: 20px;
   border-radius: 50%;
 }
@@ -39,7 +38,6 @@
   background-color: white;
   height: 2.5rem;
   position: absolute;
-  left: 16%;
   padding: 20px;
   border-radius: 50%;
 }
@@ -49,7 +47,7 @@
 }
 
 .imgpproduct {
-  height: 20rem;
+  height: 25rem;
   border-radius: 5%;
  
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import Thumbnail from "../Thumbnail";
 import ThumbnailSecond from "../ThumbnailSecond";
@@ -7,13 +7,34 @@ import ThumbnailSecond from "../ThumbnailSecond";
 import styles from "./styles.module.css";
 
 import ImgMain from "../../ecommerce-product-page-main/images/image-product-1.jpg";
-import close from "../../ecommerce-product-page-main/images/icon-close.svg";
 
 import Info from "../Info";
 import { InfoProduct } from "../../data/productsItems";
 
-const Content = ({ zoom, setZoom }) => {
-  const [productId, setProductId] = useState(1);
+const Content = () => {
+  const [zoom, setZoom] = useState(false);
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+    
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setZoom(false)
+        }
+      }
+      
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
+ 
+
 
   return (
     <main>
@@ -21,15 +42,19 @@ const Content = ({ zoom, setZoom }) => {
         <div className={styles.imgMain}>
           <img src={ImgMain} alt="img main" />
         </div>
-        <ThumbnailSecond setZoom={() => setZoom(true)} zoom={zoom} />
+        <ThumbnailSecond setZoom={() => setZoom(!zoom)}  />
       </div>
 
       {zoom && (
         <div className={`${styles.zoom} ${styles.lbox}`}>
-        
-            <img src={close} alt="close" onClick={() => setZoom(false)} />
+        <div className={styles.zoomContent} ref={wrapperRef}>
+
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fillRule="evenodd"  alt="close" onClick={() => setZoom(!zoom)} className={styles.close} /></svg>
+
             <Thumbnail />
-            <ThumbnailSecond />
+            <ThumbnailSecond  setZoom={setZoom} zoom={zoom}/>
+
+        </div>
       
         </div>
       )}

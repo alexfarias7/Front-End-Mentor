@@ -1,14 +1,10 @@
-import { useRef, useState, useEffect  } from "react";
 import { productsSecond } from "../../data/productsItems";
 
 import styles from "./styles.module.css";
 
-const ThumbnailSecond = ({ zoom, setZoom }) => {
-  const zoomRef = useRef(false)
-
-
+const ThumbnailSecondZomm = ({ zoom, setZoom }) => {
   return (
-    <div className={`${styles.secondProduct} ${zoom ? styles.normal : ''}`} >
+    <div className={`${styles.secondProduct} ${zoom ? styles.normal : ''}`}>
       {productsSecond.map((products) => (
         <div key={products.id}>
           <img
@@ -17,7 +13,6 @@ const ThumbnailSecond = ({ zoom, setZoom }) => {
             tabIndex={products.id}
             onClick={setZoom}
             className={zoom ? styles.overshadow : ""}
-           ref={zoomRef}
           />
         </div>
       ))}
@@ -25,4 +20,4 @@ const ThumbnailSecond = ({ zoom, setZoom }) => {
   );
 };
 
-export default ThumbnailSecond;
+export default ThumbnailSecondZomm;

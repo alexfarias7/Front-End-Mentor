@@ -7,7 +7,7 @@
 .secondProduct img {
   display: flex;
   flex-direction: row;
-  height: 4.5rem;
+  height: 5.5rem;
   border-radius: 8%;
 }
 
@@ -15,6 +15,5 @@
 .overshadow:focus {
   opacity: 0.2;
 }
-.secondProduct .overshadow{
-  height: 5.5rem;
-}
+
+

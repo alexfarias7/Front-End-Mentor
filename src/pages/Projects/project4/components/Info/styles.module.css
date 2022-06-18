@@ -48,6 +48,7 @@
     align-items: center;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .buttons .cart{
